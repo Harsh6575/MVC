@@ -1,19 +1,14 @@
 const EmployeeView = (req, res) => {
   res.render("Employee", {});
-};
+}; 
+// employee ejs
 
 const DetailsView = (req, res) => {
   res.render("Details", {});
 };
+// details ejs
+
 module.exports = {
   EmployeeView,
   DetailsView,
-  // EmployeeUser
 };
-
-// const EmployeeUser = (req, res) => {
-//     const { name, email, location, password, confirm } = req.body;
-//     if (!name || !email || !password || !confirm) {
-//       console.log("Fill empty fields");
-//     };
-// };

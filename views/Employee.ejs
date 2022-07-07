@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MVC reg</title>
-</head>
+  </head>
 
-<style>
-    body{
-        background-color: #333652;
+  <style>
+    body {
+      background-color: #333652;
     }
     .App {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .heading{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #FAD02C;
-    padding: 15px;
-  }
+    .heading {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fad02c;
+      padding: 15px;
+    }
 
-  input {
-    margin: 14px;
-    color: #FAD02C;
-    background-color: #90ADC6;
-  }
+    input {
+      margin: 14px;
+      color: #fad02c;
+      background-color: #90adc6;
+    }
 
-  .name {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #FAD02C;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-</style>
+    .name {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #fad02c;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  </style>
 
-<body>
-    <form action="/Details"  method="post" class="App">
-        <h1 class="heading">Employee Regestration</h1>
-        <input type="text" name="name" class="name" placeholder="name"> <br><br>
-        <input type="text" name="email" class="name" placeholder="email"> <br><br>
-        <input type="text" name="contact" class="name" placeholder="contact no"> <br><br>
-        <input type="submit" value="Submit" class="name">
+  <body>
+    <form action="/Details" method="post" class="App">
+      <h1 class="heading">Employee Regestration</h1>
+      <input type="text" name="name" class="name" placeholder="name" />
+      <br /><br />
+      <input type="text" name="email" class="name" placeholder="email" />
+      <br /><br />
+      <input type="text" name="contact" class="name" placeholder="contact no" />
+      <br /><br />
+      <input type="submit" value="Submit" class="name" />
     </form>
-</body>
+  </body>
 </html>
