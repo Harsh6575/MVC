@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVC det</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Employee Details</title>
 </head>
-
-<style>
-    body {
-        min-height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #FAD02C;
-        background-color: #333652;
-    }
-
-    table{
-        text-align: center;
-        border: 4px solid #FAD02C;
-        width: 70rem;
-    }
-</style>
-
 <body>
-    <div>
-        <table border="2">
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>ContactNo</th>
-            </tr>
-            <tr>
-                <td id="n">
-                    <%= name_data.name%>
-                </td>
-                <td>
-                    <%= name_data.email%>
-                </td>
-                <td>
-                    <%= name_data.contact%>
-                </td>
-            </tr>
-        </table>
-    </div>
-</body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MVC Regestration from</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/register">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
+    <div class="container my-3">
+        <h1 class="mb-3">Your Data</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile No.</th>
+              </tr>
+            </thead>
+            <tbody>
+            <%list.forEach(data => {%>
+                <tr>
+                  <th scope="row"><%= data._id %></th>
+                  <td><%= data.name %></td>
+                  <td><%= data.email %></td>
+                  <td><%= data.phone %></td>
+                </tr>
+            <%})%>
+            </tbody>
+          </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
 </html>
